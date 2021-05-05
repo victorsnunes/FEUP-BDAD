@@ -149,13 +149,13 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("R U Mine?", '00:03:43', "Roc
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Fluorescent Adolescent", '00:03:15', "Rock");
 
 
--- esta parte causa erros de CHECK 
+
 -- Performances --
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco) VALUES ('12:30', '15:30', '3:00', 'Palco Leste');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco) VALUES ('16:00', '19:00', '2:00', 'Palco Leste');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco) VALUES ('15:00', '17:00', '2:00', 'Palco Norte');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 'Arctic Monkeys');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', '751648325');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('15:00', '17:00', '2:00', 'Palco Norte', '789012435');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste', '943165780');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste', '164792048');
 
 
 
@@ -172,15 +172,6 @@ INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (6, '751648325');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (7, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (8, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (9, '461875345');
-
-
-
--- Performances Realizadas pelos Artistas/Bandas --
-INSERT INTO TocarBanda (PerformanceID, BandaNome) VALUES (1, 'Arctic Monkeys');
-INSERT INTO TocarArtista (PerformanceID, ArtistaID) VALUES (2, '751648325');
-INSERT INTO TocarArtista (PerformanceID, ArtistaID) VALUES (3, '789012435');
-INSERT INTO TocarArtista (PerformanceID, ArtistaID) VALUES (4, '943165780');
-INSERT INTO TocarArtista (PerformanceID, ArtistaID) VALUES (5, '164792048');
 
 
 

@@ -132,8 +132,11 @@ CREATE TABLE Performance(
     HoraFim TIME NOT NULL,
     Duracao TIME,  
     Palco CHAR(30),
+    ArtistaID CHAR(9) REFERENCES Artista ON UPDATE CASCADE ON DELETE CASCADE,
+    BandaNome CHAR(30) REFERENCES Banda ON UPDATE CASCADE ON DELETE CASCADE,
     CHECK(TIME(HoraInicio) < TIME(HoraFim)),
-    CHECK(strftime('%s', Duracao) - strftime('%s', '00:00')  == strftime('%s', HoraFim) - strftime('%s', HoraInicio))
+    CHECK(strftime('%s', Duracao) - strftime('%s', '00:00')  == strftime('%s', HoraFim) - strftime('%s', HoraInicio)),
+    CHECK( ((ArtistaID IS NULL) AND (BandaNome IS NOT NULL)) OR ((ArtistaID IS NOT NULL) AND (BandaNome IS NULL)) )
 );
 
 CREATE TABLE Patrocinador(
@@ -158,19 +161,6 @@ CREATE TABLE TocarAoVivo(
     PerformanceID INTEGER REFERENCES Performance ON UPDATE CASCADE ON DELETE CASCADE,
     MusicaID INTEGER REFERENCES Musica ON UPDATE CASCADE ON DELETE CASCADE,
     PRIMARY KEY (PerformanceID, MusicaID)
-);
-
-CREATE TABLE TocarArtista(
-    PerformanceID INTEGER PRIMARY KEY,
-    ArtistaID CHAR(9) REFERENCES Artista ON UPDATE CASCADE ON DELETE CASCADE,
-    FOREIGN KEY (PerformanceID) REFERENCES Performance ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-
-CREATE TABLE TocarBanda(
-    PerformanceID INTEGER PRIMARY KEY,
-    BandaNome CHAR(30) REFERENCES Banda ON UPDATE CASCADE ON DELETE CASCADE,
-    FOREIGN KEY (PerformanceID) REFERENCES Performance ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Trabalha(
