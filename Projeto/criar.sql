@@ -29,7 +29,7 @@ DROP TABLE IF EXISTS PrecoAssento;
 CREATE TABLE Pessoa(
     NIF CHAR(9) NOT NULL PRIMARY KEY,
     Nome CHAR(30) NOT NULL,
-    DataNasc TEXT NOT NULL,
+    DataNasc DATE NOT NULL,
     Sexo CHAR(1) DEFAULT('?'),
     Contacto CHAR(12) UNIQUE,
     Idade INTEGER
@@ -132,8 +132,8 @@ CREATE TABLE Performance(
     HoraFim TIME NOT NULL,
     Duracao TIME,  
     Palco CHAR(30),
-    CHECK(HoraInicio < HoraFim),
-    CHECK(Duracao = HoraInicio - HoraFim)
+    CHECK(TIME(HoraInicio) < TIME(HoraFim)),
+    CHECK(strftime('%s', Duracao) - strftime('%s', '00:00')  == strftime('%s', HoraFim) - strftime('%s', HoraInicio))
 );
 
 CREATE TABLE Patrocinador(
@@ -150,8 +150,8 @@ CREATE TABLE Evento(
     HoraFim TIME NOT NULL,
     Duracao TIME NOT NULL,
     UNIQUE(Nome, Localidade, EventoData),
-    CHECK(HoraInicio < HoraFim),
-    CHECK(Duracao == HoraInicio - HoraFim)
+    CHECK(TIME(HoraInicio) < TIME(HoraFim)),
+    CHECK(strftime('%s', Duracao) - strftime('%s', '00:00')  == strftime('%s', HoraFim) - strftime('%s', HoraInicio))
 );
 
 CREATE TABLE TocarAoVivo(
