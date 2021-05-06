@@ -86,6 +86,7 @@ CREATE TABLE PrecoAssento(
 CREATE TABLE IngressoComum(
     ID INTEGER PRIMARY KEY,
     FOREIGN KEY (ID) REFERENCES Ingresso
+    --,CHECK (ID NOT IN (SELECT IngressoVip.ID FROM IngressoVip))
 );
  
 CREATE TABLE IngressoVip(
@@ -93,6 +94,7 @@ CREATE TABLE IngressoVip(
     DireitoBebidasGratis  INTEGER DEFAULT(1),
     AcessoBasitidores INTEGER DEFAULT(1), -- atenção typo no nome do atributo
     FOREIGN KEY (ID) REFERENCES Ingresso
+    --,CHECK (ID NOT IN (SELECT IngressoComum.ID FROM IngressoComum))
 );
 
 CREATE TABLE Banda(
@@ -117,7 +119,7 @@ CREATE TABLE Musica(
     ID INTEGER PRIMARY KEY,
     Nome CHAR(30) NOT NULL,
     Duracao TIME,
-    Genero CHAR(30) NOT NULL DEFAULT('Unknown Genre')
+    Genero CHAR(30) DEFAULT('Unknown Genre')
 );
 
 CREATE TABLE Compoe(
@@ -128,8 +130,8 @@ CREATE TABLE Compoe(
 
 CREATE TABLE Performance(
     ID INTEGER PRIMARY KEY,
-    HoraInicio TIME NOT NULL,
-    HoraFim TIME NOT NULL,
+    HoraInicio TIME,
+    HoraFim TIME,
     Duracao TIME,  
     Palco CHAR(30),
     ArtistaID CHAR(9) REFERENCES Artista ON UPDATE CASCADE ON DELETE CASCADE,
@@ -149,9 +151,9 @@ CREATE TABLE Evento(
     Nome CHAR(30) NOT NULL,
     Localidade CHAR(30) NOT NULL,
     EventoData DATE NOT NULL,
-    HoraInicio TIME NOT NULL,
-    HoraFim TIME NOT NULL,
-    Duracao TIME NOT NULL,
+    HoraInicio TIME,
+    HoraFim TIME,
+    Duracao TIME,
     UNIQUE(Nome, Localidade, EventoData),
     CHECK(TIME(HoraInicio) < TIME(HoraFim)),
     CHECK(strftime('%s', Duracao) - strftime('%s', '00:00')  == strftime('%s', HoraFim) - strftime('%s', HoraInicio))

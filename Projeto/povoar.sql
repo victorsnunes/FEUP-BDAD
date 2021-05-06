@@ -105,6 +105,7 @@ INSERT INTO Patrocinador VALUES ('Galp', '01/01/1999');
 
 -- Eventos --
 INSERT INTO Evento (ID, Nome, EventoData, Localidade, HoraInicio, HoraFim, Duracao) VALUES (1, 'Rock in Rio', '03/10/2019', 'Rio de Janeiro', '12:00', '23:00', '11:00');
+INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (2, 'Lollapalooza', '05/04/2020', 'São Paulo');
 
 
 
