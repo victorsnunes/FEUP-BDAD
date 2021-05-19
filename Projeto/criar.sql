@@ -32,7 +32,6 @@ CREATE TABLE Pessoa(
     DataNasc DATE NOT NULL,
     Sexo CHAR(1) DEFAULT('?'),
     Contacto CHAR(12) UNIQUE,
-    Idade INTEGER
 );
 
 CREATE TABLE Espectador(
