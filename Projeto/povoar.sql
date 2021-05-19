@@ -102,7 +102,7 @@ INSERT INTO Espectador (PessoaID) VALUES ('461279058');
 INSERT INTO Espectador (PessoaID) VALUES ('156234897');
 INSERT INTO Espectador (PessoaID) VALUES ('546777818');
 INSERT INTO Espectador (PessoaID) VALUES ('422176859');
-INSERT INTO Espectador(PessoaID) VALUES ('564798026');
+INSERT INTO Espectador (PessoaID) VALUES ('564798026');
 INSERT INTO Espectador (PessoaID) VALUES ('461274458');
 INSERT INTO Espectador(PessoaID) VALUES ('156234897');
 INSERT INTO Espectador(PessoaID) VALUES ('546777818');
@@ -112,26 +112,21 @@ INSERT INTO Espectador(PessoaID) VALUES ('975312468');
 INSERT INTO Espectador(PessoaID) VALUES ('156234897');
 INSERT INTO Espectador(PessoaID) VALUES ('546777818');
 INSERT INTO Espectador(PessoaID) VALUES ('422176800');
-
 INSERT INTO Espectador(PessoaID) VALUES ('987600321');
 INSERT INTO Espectador(PessoaID) VALUES ('975312468');
 INSERT INTO Espectador(PessoaID) VALUES ('996234897');
 INSERT INTO Espectador(PessoaID) VALUES ('996777818');
 INSERT INTO Espectador(PessoaID) VALUES ('992176800');
-
 INSERT INTO Espectador(PessoaID) VALUES ('187654321');
 INSERT INTO Espectador(PessoaID) VALUES ('175312468');
 INSERT INTO Espectador(PessoaID) VALUES ('16234897');
 INSERT INTO Espectador(PessoaID) VALUES ('146777818');
 INSERT INTO Espectador(PessoaID) VALUES ('122176800');
-
 INSERT INTO Espectador(PessoaID) VALUES ('907600321');
 INSERT INTO Espectador(PessoaID) VALUES ('905312468');
 INSERT INTO Espectador(PessoaID) VALUES ('906234897');
 INSERT INTO Espectador(PessoaID) VALUES ('906777818');
 INSERT INTO Espectador(PessoaID) VALUES ('902176800');
-
-
 INSERT INTO Espectador(PessoaID) VALUES ('777999456');
 INSERT INTO Espectador(PessoaID) VALUES ('777632105');
 INSERT INTO Espectador(PessoaID) VALUES ('777572637');
@@ -192,7 +187,9 @@ INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Bateria', 'Pearl EXX7
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Piano', 'Yamaha GC 1 M PE Grand Piano', 'Preto', '164792048');
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Taylor GS Mini-e Koa', 'Marrom', '966966696');
 
-
+INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Gibson SJ-200 standard acoustic-electric', 'Bege', '264510002');
+INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Bateria', 'Yamaha', 'Vermelha', '264510004');
+INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Baixo', 'Lakland Joe Osborn Signature', 'Verde', '264510003');
 
 -- Assessoria dos Empresarios --
 INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('751648325','977977977', 0.08);
@@ -200,7 +197,7 @@ INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES (
 INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('943165780','977977977', 0.10);
 INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('164792048','132648215', 0.15);
 INSERT INTO AssessoriaBanda (BandaNome, EmpresarioID, TaxaEmpresario) VALUES ('Arctic Monkeys', '132648215', 0.10);
-
+INSERT INTO AssessoriaBanda (BandaNome, EmpresarioID, TaxaEmpresario) VALUES ('U2', '77977977', 0.20);
 
 
 -- Patrocinadores --
@@ -212,11 +209,87 @@ INSERT INTO Patrocinador VALUES ('Galp', '01/01/1999');
 -- Eventos --
 INSERT INTO Evento (ID, Nome, EventoData, Localidade, HoraInicio, HoraFim, Duracao) VALUES (1, 'Rock in Rio', '03/10/2019', 'Rio de Janeiro', '12:00', '23:00', '11:00');
 INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (2, 'Lollapalooza', '05/04/2020', 'São Paulo');
-
+INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (3, 'U2 London 22!!!', '05/05/2022', 'Londres');
 
 
 -- vejam como ficam guardadas as datas de Ingresso!
 -- Ingressos --
+ --- SHOW DO U2---
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1A','391999456', 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1B','945632105', 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1C', '184572637' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1D', '156329745' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('2A', '546777818' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('2B', '422176859' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('2C', '564798026' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('2D', '461274458' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('3A', '987654321' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('3B', '975312468' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('3C', '156234897' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('3D', '546777818' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('4A', '996234897' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('4B', '996777818' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('4D', '187654321' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('5A', '146777818' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('5D', '905312468' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('6A', '02176800' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('6B', '777999456' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('6C', '777632105' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('6D', '777572637' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7A', '777234897' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7B', '777777818' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7C', '777176859' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7D', '777798026' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('8A', '564898021' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('8B', '461279058' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('8C', '156234897' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('8D', '422176800' , 3);
+
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7A', '777274458' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7C', '777234897' , 3);
+INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7D', '777777818' , 3);
+
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (1, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (2, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (3, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (4, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (5, 1, 1);
+
+INSERT INTO IngressoComum (ID) VALUES (6);
+INSERT INTO IngressoComum (ID) VALUES (7);
+INSERT INTO IngressoComum (ID) vALUES (8);
+INSERT INTO IngressoComum (ID) VALUES (9);
+INSERT INTO IngressoComum (ID) vALUES (10);
+INSERT INTO IngressoComum (ID) VALUES (11);
+INSERT INTO IngressoComum (ID) VALUES (12);
+INSERT INTO IngressoComum (ID) vALUES (13);
+INSERT INTO IngressoComum (ID) VALUES (14);
+INSERT INTO IngressoComum (ID) vALUES (15);
+INSERT INTO IngressoComum (ID) VALUES (16);
+INSERT INTO IngressoComum (ID) VALUES (17);
+INSERT INTO IngressoComum (ID) vALUES (18);
+INSERT INTO IngressoComum (ID) VALUES (19);
+INSERT INTO IngressoComum (ID) vALUES (20);
+INSERT INTO IngressoComum (ID) VALUES (21);
+INSERT INTO IngressoComum (ID) VALUES (22);
+INSERT INTO IngressoComum (ID) vALUES (23);
+INSERT INTO IngressoComum (ID) VALUES (24);
+INSERT INTO IngressoComum (ID) vALUES (25);
+INSERT INTO IngressoComum (ID) VALUES (26);
+INSERT INTO IngressoComum (ID) VALUES (27);
+INSERT INTO IngressoComum (ID) vALUES (28);
+INSERT INTO IngressoComum (ID) VALUES (29);
+INSERT INTO IngressoComum (ID) vALUES (30);
+INSERT INTO IngressoComum (ID) VALUES (31);
+INSERT INTO IngressoComum (ID) VALUES (32);
+INSERT INTO IngressoComum (ID) VALUES (33);
     ---ROCK IN RIO--
 
 INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1A','391999456', 1);
@@ -394,7 +467,7 @@ INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '7F', 75);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '7G', 75);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8A', 50);
-INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8B', 50);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '  ', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8C', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8D', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8E', 50);
@@ -409,7 +482,48 @@ INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '9E', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '9F', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '9G', 50);
 
+--- SHOW DO U2---
 
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3,'391999456', 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3,'945632105', 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '184572637' , 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '156329745' , 80);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '546777818' , 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '422176859' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '564798026' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '461274458' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '987654321' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '975312468' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '156234897' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '546777818' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '996234897' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '996777818' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '187654321' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '146777818' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '905312468' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '02176800' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777999456' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777632105' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777572637' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777234897' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777777818' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777176859' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777798026' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '564898021' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '461279058' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '156234897' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '422176800' , 20);
+
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777274458' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777234897' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '777777818' , 20);
 
 
 
@@ -444,13 +558,14 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Evil Twin?", '00:03:23', "Ro
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Conerstone", '00:03:23', "Rock");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The View from... the Birthday Boy...", '00:04:01', "Rock");
 
--- Performances --
+--  Vmances --
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 'Arctic Monkeys');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', '751648325');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('15:00', '17:00', '2:00', 'Palco Norte', '789012435');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste', '943165780');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste', '164792048');
 
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('21:00', '00:00', '3:00', 'Palco Oeste', 'U2');
 
 
 -- Composicoes --
@@ -466,7 +581,6 @@ INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (6, '751648325');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (7, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (8, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (9, '461875345');
-
 
 
 -- Trabalhadores na Staff --
@@ -497,7 +611,24 @@ INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (5,'615738142');
 INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (1,'647510418');
 INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (2,'647510418');
 
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (1, '647510333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (3, '647510333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (5, '647510333');
 
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (3, '156230333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (4, '156230333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (5, '156230333');
+
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (4, '915370333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (5, '915370333');
+
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (1, '422170333');
+
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(1, '615738333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(2, '615738333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(3, '615738333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(4, '615738333');
+INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(5, '615738333');
 
 -- Patrocineos --
 INSERT INTO Patrocinar (PatrocinadorNome, EventoID, ValorPatrocinio) VALUES ('Super Bock', 1, 300.00);
