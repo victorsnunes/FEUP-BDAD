@@ -29,7 +29,7 @@ DROP TABLE IF EXISTS PrecoAssento;
 CREATE TABLE Pessoa(
     NIF CHAR(9) NOT NULL PRIMARY KEY,
     Nome CHAR(30) NOT NULL,
-    DataNasc DATE NOT NULL,
+    DataNasc DATE NOT NULL CHECK(DataNasc <= CURRENT_DATE),
     Sexo CHAR(1) DEFAULT('?'),
     Contacto CHAR(12) UNIQUE,
     Idade INTEGER
@@ -150,7 +150,7 @@ CREATE TABLE Evento(
     ID INTEGER PRIMARY KEY,
     Nome CHAR(30) NOT NULL,
     Localidade CHAR(30) NOT NULL,
-    EventoData DATE NOT NULL,
+    EventoData DATE NOT NULL CHECK(EventoData <= CURRENT_DATE),
     HoraInicio TIME,
     HoraFim TIME,
     Duracao TIME,

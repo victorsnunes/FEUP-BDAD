@@ -109,7 +109,6 @@ INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (2, 'Lollapalooza',
 
 
 
--- vejam como ficam guardadas as datas de Ingresso!
 -- Ingressos --
 INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('1A', '391999456', 1);
 INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('7A', '945632105', 1);
