@@ -1,4 +1,4 @@
-PRAGMA foreign_keys = ON;
+PRAGMA foreign_keys = OFF;
 
 DROP TABLE IF EXISTS Pessoa;
 DROP TABLE IF EXISTS Espectador;
@@ -23,6 +23,8 @@ DROP TABLE IF EXISTS Patrocinar;
 Drop TABLE IF EXISTS IngressoComum;
 DROP TABLE IF EXISTS Banda;
 DROP TABLE IF EXISTS PrecoAssento;
+
+PRAGMA foreign_keys = ON;
 
 CREATE TABLE Pessoa(
     NIF CHAR(9) NOT NULL PRIMARY KEY,
@@ -54,7 +56,7 @@ CREATE TABLE Artista(
 CREATE TABLE Empresario(
     PessoaID CHAR(9) NOT NULL PRIMARY KEY,
     EmailComercial TEXT UNIQUE,
-    QtdeAssesorias INTEGER CHECK(QtdeAssesorias <=15 AND QtdeAssesorias >= 0),
+    QtdeAssesorias INTEGER DEFAULT(0) CHECK(QtdeAssesorias <=15 AND QtdeAssesorias >= 0),
     FOREIGN KEY (PessoaID) REFERENCES Pessoa ON UPDATE CASCADE ON DELETE CASCADE
 );
 
