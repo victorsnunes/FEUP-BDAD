@@ -1,11 +1,10 @@
---- Idade das Pessoas ---
-sqlite> SELECT Nome,  CAST((strftime('%Y', DATE('now')) - strftime('%Y', DataNasc)) as INTEGER) as 'idade' FROM Pessoa;
-
 --- Total Arrecadado com os ingressos vendidos ---
 SELECT SUM(Valor) FROM PrecoAssento JOIN Ingresso USING(Lugar, EventoID);
 
 --- Musicas que a duracao é menor que 3 minutos ---
-sqlite> SELECT Nome, Duracao FROM Musica WHERE ( (strftime('%M', Duracao) )  < '03' );
+SELECT Nome, Duracao FROM Musica WHERE ( (strftime('%M', Duracao) )  < '03' );
+
+--- Diferenca entre homens e mulheres que assistiram ao show do U2
 
 
 
