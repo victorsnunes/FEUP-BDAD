@@ -1,0 +1,8 @@
+CREATE TRIGGER atualiza_idade
+AFTER UPDATE ON DataNasc ON Pessoa
+FOR EACH ROW
+BEGIN
+    UPDATE Pessoa
+    SET Idade = 99
+    WHERE NIF = OLD.NIF;
+END;
