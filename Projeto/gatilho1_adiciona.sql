@@ -1,4 +1,4 @@
-CREATE TRIGGER atualiza_idade
+CREATE TRIGGER calcula_idade
 AFTER INSERT ON Pessoa
 FOR EACH ROW
 BEGIN

@@ -1,5 +1,3 @@
--- ver MR e aplicar alterações necessárias!
-
 PRAGMA Foreign_key = ON;
 
 DROP TABLE IF EXISTS Pessoa;
