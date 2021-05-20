@@ -1,6 +1,6 @@
 -- vão precisar mais dados para fase seguinte!
 
-PRAGMA Foreign_key = ON;
+PRAGMA foreign_keys = ON;
 
 
 -- Bandas --
@@ -151,11 +151,11 @@ INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('915370412', 'Be
 INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('422170022', 'Joao Fernando Torres Oliveira', '1994-06-03', 'M','351909099099');
 INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('615738142', 'Bruno Bernardo Silva Borges', '1991-09-03', 'M','35178891098');
 
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('647999333', 'Sophia Douro Magalhaes', '1996-03-20','F','351808342');
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('156999333', 'Amily Jones', '1995-02-25','F','351808300');
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('915999333', 'Isaac Pacheco Raposo', '1994-10-27', 'M','3518087777');
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('422999333', 'Gabriel Silva Rodrigues', '1994-12-03', 'M','351908089099');
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('615999333', 'Lucca Goncalves Santorreli', '1972-09-03', 'M','35178888098');
+INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('647510333', 'Sophia Douro Magalhaes', '1996-03-20','F','351808342');
+INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('156230333', 'Amily Jones', '1995-02-25','F','351808300');
+INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('915370333', 'Isaac Pacheco Raposo', '1994-10-27', 'M','3518087777');
+INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('422170333', 'Gabriel Silva Rodrigues', '1994-12-03', 'M','351908089099');
+INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('615738333', 'Lucca Goncalves Santorreli', '1972-09-03', 'M','35178888098');
 
 INSERT INTO Staff (PessoaID, Cargo) VALUES ('647510418', 'Faxineiro');
 INSERT INTO Staff (PessoaID, Cargo) VALUES ('156230897', 'Pirotecnia');
@@ -171,8 +171,8 @@ INSERT INTO Staff (PessoaID, Cargo) VALUES ('615738333','Faxina');
 
 
 -- Empresarios --
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('977977977','Bernard Walker', '1975-12-12','M','3512727277');
-INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('132648215','John Smith', '1982-09-27','M','136264509');
+INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('977977977','Bernard Walker', '1975-12-12','M','3512727277');
+INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('132648215','John Smith', '1982-09-27','M','136264509');
 
 INSERT INTO Empresario (PessoaID, EmailComercial, QtdeAssesorias) VALUES ('977977977','bernard_walker@gmail.com', 0);
 INSERT INTO Empresario (PessoaID, EmailComercial, QtdeAssesorias) VALUES ('132648215','john_smith123@gmail.com', 0);
@@ -185,19 +185,19 @@ INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Gibson Le
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Baixo', 'Fender Precision Bass', 'Preto', '310542186');
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Bateria', 'Pearl EXX725BR/C Export Jet Black', 'Preto', '264510239');
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Piano', 'Yamaha GC 1 M PE Grand Piano', 'Preto', '164792048');
-INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Taylor GS Mini-e Koa', 'Marrom', '966966696');
+INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Taylor GS Mini-e Koa', 'Marrom', '789012435');
 
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Guitarra', 'Gibson SJ-200 standard acoustic-electric', 'Bege', '264510002');
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Bateria', 'Yamaha', 'Vermelha', '264510004');
 INSERT INTO Instrumento (Nome, Modelo, Cor, Dono) VALUES ('Baixo', 'Lakland Joe Osborn Signature', 'Verde', '264510003');
 
 -- Assessoria dos Empresarios --
-INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('751648325','977977977', 0.08);
-INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('789012435','977977977', 0.12);
-INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('943165780','977977977', 0.10);
-INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('164792048','132648215', 0.15);
+INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('751648325', '977977977', 0.08);
+INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('789012435', '977977977', 0.12);
+INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('943165780', '977977977', 0.10);
+INSERT INTO AssessoriaArtista (ArtistaID, EmpresarioID, TaxaEmpresario) VALUES ('164792048', '132648215', 0.15);
 INSERT INTO AssessoriaBanda (BandaNome, EmpresarioID, TaxaEmpresario) VALUES ('Arctic Monkeys', '132648215', 0.10);
-INSERT INTO AssessoriaBanda (BandaNome, EmpresarioID, TaxaEmpresario) VALUES ('U2', '77977977', 0.20);
+INSERT INTO AssessoriaBanda (BandaNome, EmpresarioID, TaxaEmpresario) VALUES ('U2', '977977977', 0.20);
 
 
 -- Patrocinadores --
@@ -288,7 +288,6 @@ INSERT INTO IngressoComum (ID) VALUES (29);
 INSERT INTO IngressoComum (ID) vALUES (30);
 INSERT INTO IngressoComum (ID) VALUES (31);
 INSERT INTO IngressoComum (ID) VALUES (32);
-INSERT INTO IngressoComum (ID) VALUES (33);
 
 
     ---ROCK IN RIO--
@@ -352,23 +351,24 @@ INSERT INTO Ingresso (Lugar, Espectador, EventoID) VALUES ('8A', '777176800' , 1
 
 
 
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (34, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (35, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (36, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (37, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (38, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (39, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (40, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (41, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (42, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (43, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (44, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (45, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (46, 1, 1);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (47, 1, 0);
-INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (48, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (33, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (34, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (35, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (36, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (37, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (38, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (39, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (40, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (41, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (42, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (43, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (44, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (45, 1, 1);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (46, 1, 0);
+INSERT INTO IngressoVip (ID, DireitoBebidasGratis, AcessoBasitidores) VALUES (47, 1, 1);
 
 
+INSERT INTO IngressoComum (ID) VALUES (48);
 INSERT INTO IngressoComum (ID) VALUES (49);
 INSERT INTO IngressoComum (ID) VALUES (50);
 INSERT INTO IngressoComum (ID) vALUES (51);
@@ -401,9 +401,6 @@ INSERT INTO IngressoComum (ID) VALUES (77);
 INSERT INTO IngressoComum (ID) vALUES (78);
 INSERT INTO IngressoComum (ID) VALUES (79);
 INSERT INTO IngressoComum (ID) VALUES (80);
-INSERT INTO IngressoComum (ID) vALUES (81);
-INSERT INTO IngressoComum (ID) VALUES (82);
-INSERT INTO IngressoComum (ID) vALUES (83);
 
 
 
@@ -577,7 +574,7 @@ INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES 
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste', '943165780');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste', '164792048');
 
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('20:00', '23:00', '3:00', 'Palco Oeste', 'U2');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('20:00', '23:00', '3:00', 'Palco Oeste', 'U2');
 
 
 -- Composicoes --
