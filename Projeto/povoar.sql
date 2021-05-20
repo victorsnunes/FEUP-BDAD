@@ -8,7 +8,7 @@ INSERT INTO Banda (Nome) VALUES ('Arctic Monkeys');
 INSERT INTO Banda (Nome) VALUES ('U2');
 
 -- Artistas --
-INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('164792048','Elton Hercules John', '1947-05-25', 'M','3512333233233');
+INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('164792048','Elton Hercules John', '1947-05-25', 'M','3512793903');
 INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('751648325', 'Peter Gene Hernandez', '1985-10-08','M','35196467');
 INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('789012435','Edward Christopher Sheeran', '1991-02-17','M', '351969966');
 INSERT INTO Pessoa (NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('943165780', 'Céline Marie Claudette Dion', '1968-04-30', 'F', '3511122122');
@@ -570,7 +570,7 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Where the Streets Have No Na
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Mysterious Ways", '00:04:45', "Rock");
 
 
---  Vmances --
+--  Performances --
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 'Arctic Monkeys');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', '751648325');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('15:00', '17:00', '2:00', 'Palco Norte', '789012435');
