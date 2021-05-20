@@ -558,6 +558,18 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Evil Twin?", '00:03:23', "Ro
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Conerstone", '00:03:23', "Rock");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The View from... the Birthday Boy...", '00:04:01', "Rock");
 
+
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Beautifil day", '00:04:04', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("One", '00:04:34', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("With or Without You", '00:04:53', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The Unforgettable Fire", '00:04:49', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("sunday bloody sunday", '00:04:40', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("All I Want Is You", '00:03:36', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("I Still Haven't Found What I'm Looking For ", '00:04:36', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Where the Streets Have No Name ", '00:03:23', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Mysterious Ways", '00:04:45', "Rock");
+
+
 --  Vmances --
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 'Arctic Monkeys');
 INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', '751648325');
