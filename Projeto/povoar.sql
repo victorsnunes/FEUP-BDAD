@@ -464,7 +464,7 @@ INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '7F', 75);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '7G', 75);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8A', 50);
-INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '  ', 50);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8B', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8C', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8D', 50);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (1, '8E', 50);
