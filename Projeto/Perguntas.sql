@@ -1,6 +1,7 @@
 --- Total Arrecadado com os ingressos vendidos ---
 SELECT SUM(Valor) FROM PrecoAssento JOIN Ingresso USING(Lugar, EventoID);
 
+/*
 --- Musicas que a duracao é menor que 3 minutos ---
 SELECT Nome, Duracao FROM Musica WHERE ( (strftime('%M', Duracao) )  < '03' );
 
@@ -12,3 +13,4 @@ SELECT Nome, Duracao FROM Musica WHERE ( (strftime('%M', Duracao) )  < '03' );
 SELECT Nome,  COUNT(*) as  'Num instrumentos' FROM Artista JOIN Instrumento USING(PessoaID, Dono);
 --Error: cannot join using column PessoaID - column not present in both tables--
 
+*/
