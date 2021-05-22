@@ -17,10 +17,12 @@ FROM (((Pessoa JOIN Artista ON NIF = PessoaID)
                JOIN Musica ON Musica.ID = MusicaID);
 
 
+
 SELECT Interprete, Musica, Compositor
 FROM Interpretes NATURAL JOIN Compositores
 WHERE NOT (Interprete = Compositor)
       AND Interprete NOT NULL;
+
 
 
 DROP VIEW Interpretes;
