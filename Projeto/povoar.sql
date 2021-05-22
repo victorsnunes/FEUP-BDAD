@@ -157,7 +157,7 @@ INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('915370333', 'Is
 INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('422170333', 'Gabriel Silva Rodrigues', '1994-12-03', 'M','351908089099');
 INSERT INTO Pessoa(NIF, Nome, DataNasc, Sexo, Contacto) VALUES ('615738333', 'Lucca Goncalves Santorreli', '1972-09-03', 'M','35178888098');
 
-INSERT INTO Staff (PessoaID, Cargo) VALUES ('647510418', 'Faxineiro');
+INSERT INTO Staff (PessoaID, Cargo) VALUES ('647510418', 'Faxina');
 INSERT INTO Staff (PessoaID, Cargo) VALUES ('156230897', 'Pirotecnia');
 INSERT INTO Staff (PessoaID, Cargo) VALUES ('915370412', 'Iluminacao');
 INSERT INTO Staff (PessoaID, Cargo) VALUES ('422170022', 'Som');
@@ -209,7 +209,7 @@ INSERT INTO Patrocinador VALUES ('Galp', '01/01/1999');
 -- Eventos --
 INSERT INTO Evento (ID, Nome, EventoData, Localidade, HoraInicio, HoraFim, Duracao) VALUES (1, 'Rock in Rio', '03/10/2019', 'Rio de Janeiro', '12:00', '23:00', '11:00');
 INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (2, 'Lollapalooza', '05/04/2020', 'São Paulo');
-INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (3, 'U2 London 22!!!', '05/05/2022', 'Londres');
+INSERT INTO Evento (ID, Nome, EventoData, Localidade) VALUES (3, 'U2 London 2022', '05/05/2022', 'Londres');
 
 
 -- Ingressos --
@@ -525,6 +525,23 @@ INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9D' , 20);
 
 
 -- Musicas --
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Do I Wanna Know?", '00:04:25', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("R U Mine?", '00:03:43', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Fluorescent Adolescent", '00:03:15', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Arabella", '00:03:27', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("When The Sun Goes Down", '00:03:22', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Snap Out Of It", '00:03:13', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Conerstone", '00:03:17', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Crying Lightning", '00:03:44', "Rock");
+
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Talking to Moon", '00:03:35', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("When I Was Your Man", '00:03:54', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Locked Out Of Heaven", '00:03:55', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("24K Magic", '00:02:39', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Just The Way You Are", '00:03:57', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The Lazy Song", '00:03:37', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("That's What I Like", '00:03:37', "Pop");
+
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Perfect", '00:04:40', "Pop");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Shape of You", '00:04:24', "Pop");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Photograph", '00:04:34', "Pop");
@@ -532,31 +549,14 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Castle on The Hill", '00:04:
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Thinking Out Loud", '00:04:57', "Pop");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Happier", '00:03:35', "Pop");
 
-
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("My Heart Will Go On", '00:04:36', "Pop");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Because You Loved Me", '00:04:33', "Pop");
 
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Talking to Moon", '00:03:35', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("When I Was Your Man", '00:03:54', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Locked Out Of Heaven", '00:03:55', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("24K Magic", '00:02:39', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Just The Way You Are", '00:03:57', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The lazy song", '00:03:37', "Pop");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("That's What I Like", '00:03:37', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Your Song", '00:04:01', "Pop");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Rocket Man", '00:04:41', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Goodbye Yellow Brick Road", '00:03:12', "Rock");
 
-
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Do I Wanna Know?", '00:04:25', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("R U Mine?", '00:03:43', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Fluorescent Adolescent", '00:03:15', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Why'd You Only Call Me When You're High?", '00:04:48', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Do I wanna know?", '00:04:24', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Black Treacle?", '00:03:36', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Evil Twin?", '00:03:23', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Conerstone", '00:03:23', "Rock");
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The View from... the Birthday Boy...", '00:04:01', "Rock");
-
-
-INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Beautifil day", '00:04:04', "Rock");
+INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Beautifil Day", '00:04:04', "Rock");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("One", '00:04:34', "Rock");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("With or Without You", '00:04:53', "Rock");
 INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("The Unforgettable Fire", '00:04:49', "Rock");
@@ -568,29 +568,56 @@ INSERT INTO Musica (Nome, Duracao, Genero) VALUES ("Mysterious Ways", '00:04:45'
 
 
 --  Performances --
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 'Arctic Monkeys');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', '751648325');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('15:00', '17:00', '2:00', 'Palco Norte', '789012435');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste', '943165780');
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, ArtistaID) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste', '164792048');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, BandaNome) VALUES ('12:30', '15:30', '3:00', 'Palco Leste', 1, 'Arctic Monkeys');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, ArtistaID) VALUES ('16:00', '19:00', '2:00', 'Palco Leste', 1, '751648325');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, ArtistaID) VALUES ('15:00', '17:00', '2:00', 'Palco Norte', 1, '789012435');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, ArtistaID) VALUES ('16:30', '17:30', '1:00', 'Palco Oeste', 1, '943165780');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, ArtistaID) VALUES ('18:00', '19:00', '1:00', 'Palco Oeste', 1, '164792048');
 
-INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, BandaNome) VALUES ('20:00', '23:00', '3:00', 'Palco Oeste', 'U2');
+INSERT INTO Performance (HoraInicio, HoraFim, Duracao, Palco, EventoID, BandaNome) VALUES ('20:00', '23:00', '3:00', 'Palco Oeste', 3, 'U2');
 
 
 -- Composicoes --
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (1, '789012435');
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (2, '789012435');
-
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (3, '943165780');
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (4, '943165780');
-
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (5, '751648325');
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (6, '751648325');
-
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (1, '461875345');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (2, '461875345');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (3, '461875345');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (4, '461875345');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (5, '461875345');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (6, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (7, '461875345');
 INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (8, '461875345');
-INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (9, '461875345');
 
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (9, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (10, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (11, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (12, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (13, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (14, '751648325');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (15, '751648325');
+
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (16, '789012435');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (17, '789012435');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (18, '789012435');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (19, '789012435');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (20, '789012435');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (21, '789012435');
+
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (22, '943165780');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (23, '943165780');
+
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (24, '164792048');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (25, '164792048');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (26, '164792048');
+
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (27, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (28, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (29, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (30, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (31, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (32, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (33, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (34, '264510001');
+INSERT INTO Compoe (MusicaID, ArtistaID) VALUES (35, '264510001');
 
 -- Trabalhadores na Staff --
 INSERT INTO Trabalha (PerformanceID, StaffID) VALUES (1,'422170022');
@@ -640,5 +667,52 @@ INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(4, '615738333');
 INSERT INTO Trabalha (PerformanceID, StaffID) VALUES(5, '615738333');
 
 -- Patrocineos --
+
 INSERT INTO Patrocinar (PatrocinadorNome, EventoID, ValorPatrocinio) VALUES ('Super Bock', 1, 300.00);
 INSERT INTO Patrocinar (PatrocinadorNome, EventoID, ValorPatrocinio) VALUES ('Galp', 1, 450.00);
+
+-- Tocar Ao Vivo --
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,1);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,2);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,3);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,4);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,5);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,6);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,7);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (1,8);
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,9);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,10);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,11);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,12);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,13);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,14);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,15);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,24);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (2,16);
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,16);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,17);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,18);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,19);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,20);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,21);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (3,22);
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (4,22);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (4,23);
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (5,24);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (5,25);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (5,26);
+
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,27);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,28);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,29);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,30);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,31);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,32);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,33);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,34);
+INSERT  INTO TocarAoVivo(PerformanceID, MusicaID) VALUES (6,35);

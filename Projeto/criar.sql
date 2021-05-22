@@ -86,15 +86,13 @@ CREATE TABLE PrecoAssento(
 CREATE TABLE IngressoComum(
     ID INTEGER PRIMARY KEY,
     FOREIGN KEY (ID) REFERENCES Ingresso
-    --,CHECK (ID NOT IN (SELECT IngressoVip.ID FROM IngressoVip))
 );
  
 CREATE TABLE IngressoVip(
     ID INTEGER PRIMARY KEY,
     DireitoBebidasGratis  INTEGER DEFAULT(1),
-    AcessoBasitidores INTEGER DEFAULT(1), -- atenção typo no nome do atributo
+    AcessoBasitidores INTEGER DEFAULT(1),
     FOREIGN KEY (ID) REFERENCES Ingresso
-    --,CHECK (ID NOT IN (SELECT IngressoComum.ID FROM IngressoComum))
 );
 
 CREATE TABLE Banda(
@@ -115,6 +113,7 @@ CREATE TABLE AssessoriaBanda(
     FOREIGN KEY (BandaNome) REFERENCES Banda ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+
 CREATE TABLE Musica(
     ID INTEGER PRIMARY KEY,
     Nome CHAR(30) NOT NULL,
@@ -134,6 +133,7 @@ CREATE TABLE Performance(
     HoraFim TIME,
     Duracao TIME,  
     Palco CHAR(30),
+    EventoID INTEGER REFERENCES Evento ON UPDATE CASCADE ON DELETE CASCADE,
     ArtistaID CHAR(9) REFERENCES Artista ON UPDATE CASCADE ON DELETE CASCADE,
     BandaNome CHAR(30) REFERENCES Banda ON UPDATE CASCADE ON DELETE CASCADE,
     CHECK(TIME(HoraInicio) < TIME(HoraFim)),

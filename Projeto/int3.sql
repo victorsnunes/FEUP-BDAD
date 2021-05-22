@@ -1,0 +1,1 @@
+---- Empresario, qtd De Assesorias Bandas, Qtd de ass Artistas ----
