@@ -1,4 +1,4 @@
--- Diferenca do preco medio de ingressos vip e comuns
+-- Diferenca da media do preco de ingressos vip e comuns
 SELECT (AVG(PrecoIngressosVIP.Valor) - AVG(PrecoIngressosComuns.Valor)) AS Diferenca
 FROM (
         (Ingresso NATURAL JOIN IngressoVip)
