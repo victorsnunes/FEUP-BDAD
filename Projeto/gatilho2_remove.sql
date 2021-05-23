@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS calcula_duracao;
+DROP TRIGGER garante_ingresso_disjoint;

@@ -1,14 +1,12 @@
 
-INSERT INTO Pessoa (NIF, Nome, DataNasc) VALUES ('123','Fulano', '1950-01-24');
-INSERT INTO Artista (PessoaID, NomeArtistico) VALUES ('123','Fulano');
+INSERT INTO Evento (ID, Nome, Localidade, EventoData) VALUES (999, 'Evento Ficticio', 'Local Ficticio', '2021-01-01');
 
-INSERT INTO Performance (ID, HoraInicio, HoraFim, Duracao, ArtistaID) VALUES (9998, '13:00', '14:00', '1:00', '123');
-INSERT INTO Performance (ID, HoraInicio, HoraFim, Duracao, ArtistaID) VALUES (9999, '13:00', '14:00', '1:00', '123');
+INSERT INTO Ingresso (ID, Lugar, EventoID) VALUES (999, '1A', 999);
+INSERT INTO IngressoComum (ID) VALUES (999);
 
-UPDATE Performance SET HoraInicio = '09:34' WHERE ID = 9998;
-UPDATE Performance SET HoraFim = '20:19' WHERE ID = 9999;
+INSERT INTO IngressoVIP (ID) VALUES (999);
 
-SELECT * FROM Performance WHERE (ID = 9998 OR ID = 9999);
+SELECT * FROM IngressoVIP WHERE ID = 999;
 
-DELETE FROM Performance WHERE (ID = 9998 OR ID = 9999);
-DELETE FROM Pessoa WHERE NIF = '123';
+DELETE FROM Evento WHERE ID = 999;
+DELETE FROM Ingresso WHERE ID = 999;
