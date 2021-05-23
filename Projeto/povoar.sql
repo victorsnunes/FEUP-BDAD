@@ -485,42 +485,72 @@ INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3,'1A', 80);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3,'1B', 80);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '1C' , 80);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '1D' , 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '1E' , 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '1F' , 80);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '1G' , 80);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2A' , 80);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '2G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3A' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '3G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4A' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '4G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5A' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5B' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '5G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6A' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '6G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7A' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '7G' , 20);
 
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8A' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8B' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8C' , 20);
 INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8E' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8F' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '8G' , 20);
 
-INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9A' , 20);
-INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9C' , 20);
-INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9D' , 20);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9A' , 15);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9B' , 15);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9C' , 15);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9D' , 15);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9E' , 15);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9F' , 10);
+INSERT INTO PrecoAssento (EventoID, Lugar, Valor) VALUES (3, '9G' , 10);
 
 
 
